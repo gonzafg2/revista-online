@@ -1,2 +1,31 @@
 @import 'reset';
 @import 'typography';
+
+*
+{
+   box-sizing: border-box
+}
+html,
+body,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button
+{
+   margin:0;
+   padding: 0;
+}
+a,
+a:active,
+a:hover,
+a:focus
+{
+   text-decoration: none;
+   color: inherit;
+}

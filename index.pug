@@ -15,8 +15,6 @@ html(lang="es")
 		meta(name="description" content="")
 		//- PALABRAS CLAVE DEL SITIO PARA SEO
 		meta(name="keywords" content="")
-		//- Bootstrap Cargado desde SASS
-		//- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		//- FAVICON
 		link(rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon")
 		//- FONTAWESOME 5
@@ -24,24 +22,75 @@ html(lang="es")
 		//- ESTILOS CSS
 		link(rel="stylesheet" href="assets/css/style.css")
 		//- TÍTULO DE LA PÁGINA
-		title Documento
-	
+		title Revista On-line
+
 	body
-      nav
+		.container-revista
+			nav
+				.logo Diario
+				.nav
+				ul
+					li: a(href) Nosotros
+					li: a(href) Contacto
+					li: input.input-menu(type="text", name="buscar", placeholder="Buscar...")
+			header.suscribirse
+				h2 Lorem ipsum dolor sit amet
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				.suscribirse-formulario
+					input(type="text", name="")
+					button Suscríbete
 
-		header
+			main.contenido
+				.contenido-article-1
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
+				.contenido-article-2
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
+				.contenido-article-3
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
+				.contenido-article-4
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
+				.contenido-article-5
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
+				.contenido-article-6
+					h3.contenido-article-title Article Title
+					img.contenido-article-img(src="...", alt="")
+					p.contenido-article-footer Article Footer
 
-		main
-		
-		aside
+			aside.listado-izquierdo
+				.listado-izquierdo-box-1
+					h3.title Nosotros
+					p.text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque animi repellat, suscipit quo ipsa vero iusto ipsum numquam provident quod, voluptatem corrupti porro nemo rem maiores! Id, voluptatum placeat.Ratione praesentium nostrum at fuga expedita, ducimus laudantium vitae suscipit sunt cum velit eveniet atque magni odio. Corrupti cupiditate magnam ex vero dolorem impedit quos, voluptatum reprehenderit molestiae esse et.Molestias voluptate sunt quisquam maxime excepturi.
+				.listado-izquierdo-box-2
+					h3.title Tags
+					p.text Viajes
+					p.text Noticias
+					p.text Comida
+				.listado-izquierdo-box-3
+					h3.title Destacados
+					.subbox-1
+						p.text Lorem ipsum dolor sit amet.
+						img.img-aside(src="...", alt="")
+					.subbox-2
+						p.text Lorem ipsum dolor sit amet.
+						img.img-aside(src="...", alt="")
+					.subbox-3
+						p.text Lorem ipsum dolor sit amet.
+						img.img-aside(src="...", alt="")
+			footer.footer
+				p Todos los Derechos Reservados
 
-		footer
 
 		//- JQUERY 3.4.1 - MINIFICADO
 		script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-		//- POPPER-JS de BOOTSTRAP
-		script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxnpm fundMfooAo" crossorigin="anonymous")
-		//- JS de BOOTSTRAP 4.4.1
-		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous")
 		//- JS del PROYECTO
 		script(src="assets/js/script.js")
